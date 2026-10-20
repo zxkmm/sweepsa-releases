@@ -1,0 +1,30 @@
+sweepsa freeware licence
+
+Copyright (c) 2026 zxkmm. All rights reserved.
+
+sweepsa is the software in this archive: the sweepui, sweep_client and sweepd
+programs and the launch.py launcher. Third-party components listed in
+THIRD-PARTY-NOTICES.txt are not covered by this licence. Each is covered by
+its own licence.
+
+1. Use. You may use sweepsa free of charge, for any purpose.
+
+2. Redistribution. You may redistribute the unmodified archives free of
+   charge, provided this licence and THIRD-PARTY-NOTICES.txt stay with them.
+   You may not sell sweepsa or bundle it into a product that is sold.
+
+3. No warranty. sweepsa is provided "as is", without warranty of any kind,
+   express or implied, including merchantability, fitness for a particular
+   purpose and non-infringement. In no event shall the author be liable for
+   any claim, damages or other liability arising from the software or its use.
+
+4. Not a calibrated instrument. sweepsa reports uncalibrated levels unless you
+   load an amplitude correction. Do not rely on it for compliance, safety or
+   regulatory measurements.
+
+5. Third-party rights. Nothing in this licence limits the rights that the
+   licences in THIRD-PARTY-NOTICES.txt grant you. In particular, sweepd is
+   statically linked against libiio and glibc, which are licensed under the
+   GNU LGPL 2.1. You may modify those libraries, relink sweepd against them
+   with the separately published relink kit, and reverse-engineer sweepd as
+   far as needed to debug such modifications.
