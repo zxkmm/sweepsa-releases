@@ -1,9 +1,10 @@
 # sweepsa — free binaries
 
-A swept spectrum analyzer for the **AntSDR E310** (Zynq-7020 + AD936x). It hops
-the LO with the chip's **fastlock** profiles from the board's own ARM, and the
-desktop shows an instrument-style front panel: traces, markers, detectors,
-derived RBW, hold modes, a waterfall, and zero span with a video trigger.
+A swept spectrum analyzer for software-defined radios. On **AD936x boards
+running Pluto-style firmware** with a Zynq ARM, it hops the LO with the chip's
+**fastlock** profiles from the board's own ARM. The desktop shows an
+instrument-style front panel: traces, markers, detectors, derived RBW, hold
+modes, a waterfall, and zero span with a video trigger.
 
 This repository only hosts the **binary releases**. Download one from
 [Releases](../../releases).
@@ -22,7 +23,7 @@ This repository only hosts the **binary releases**. Download one from
 tar xzf sweepsa-*-macos-arm64.tar.gz && cd sweepsa-*-macos-arm64
 xattr -dr com.apple.quarantine .     # macOS only: these builds are not notarized
 ./sweepui                            # synthetic source, no radio needed
-pip3 install --user pyserial && ./launch.py   # E310 on USB: deploy sweepd and connect
+pip3 install --user pyserial && ./launch.py   # board on USB: deploy sweepd and connect
 ```
 
 `README.txt` in each archive has the details, including how to run by hand
