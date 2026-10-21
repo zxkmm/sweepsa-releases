@@ -8,6 +8,8 @@ To the best of my knowledge, this project respects the licenses of the libraries
 
 I've put a lot of time into this project, and I want to keep maintaining it for as long as I can. My concern is that if I open-source it now, someone could take the code, sell a modified version, and get famous and rich off it, while nobody ever hears about me or this original repo.
 
+**And this software is already free anyway**
+
 So before releasing the source, I'd like the project (and me) to gain a bit more visibility first. Here's my promise: **once this repo reaches 1,000 stars, I'll open-source it.**
 
 # sweepsa — free binaries
