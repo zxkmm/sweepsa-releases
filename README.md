@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 # About Open Source
 
 I've been building free and open-source software and hardware for years, and I've learned a lot of what would happen if blindly open now.
