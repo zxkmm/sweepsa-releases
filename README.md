@@ -1,17 +1,5 @@
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-# About Open Source
-
-I've been building free and open-source software and hardware for years, and I've learned a lot of what would happen if blindly open now.
-
-To the best of my knowledge, this project respects the licenses of the libraries it uses.
-
-I've put a lot of time into this project, and I want to keep maintaining it for as long as I can. My concern is that if I open-source it now, someone could take the code, sell a modified version, and get famous and rich off it, while nobody ever hears about me or this original repo.
-
-**And this software is already free anyway**
-
-So before releasing the source, I'd like the project (and me) to gain a bit more visibility first. Here's my promise: **once this repo reaches 1,000 stars, I'll open-source it.**
-
 # sweepsa — free binaries
 
 A swept spectrum analyzer for software-defined radios. On **AD936x boards
@@ -48,6 +36,20 @@ archives; on Linux install your distribution's `libhackrf0`/`hackrf` package.
 `README.txt` in each archive has the details, including how to run by hand
 and the macOS USB networking note.
 
+## Sweep speed
+
+Measured on an AntSDR E310 and a LibreSDR (AD936x, Pluto-style firmware):
+
+| span | sweep time |
+|---|---|
+| 70 MHz – 6 GHz | ~500–800 ms |
+| a few hundred MHz | ~10–60 ms |
+
+For comparison, a HackRF One in sweepsa takes ~730 ms for the full span. On a
+full span the two land in the same range. What fastlock buys on AD936x boards is
+a fast, gapless sweep with 40–56 MHz of bandwidth per segment, run from the
+board's own ARM instead of across the USB or network link.
+
 **Not a calibrated instrument.** Levels are dBFS, and an UNCAL badge stays lit,
 until you load an amplitude correction.
 
@@ -60,3 +62,8 @@ source and a script to relink against modified versions of those libraries.
 The macOS and Windows builds ship libhackrf (BSD-3-Clause) and libusb
 (LGPL-2.1) as separate libraries that `sweepui` loads at run time. Replace them
 freely; libusb's source is attached to every release.
+
+## Source code
+
+sweepsa is free, closed-source software for now. I plan to publish the source
+later.
